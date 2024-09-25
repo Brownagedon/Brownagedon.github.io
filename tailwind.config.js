@@ -8,9 +8,17 @@ module.exports = {
       './*.html',
     ],
     theme: {
-      theme: {
-        extend: {},
-      },
+        colors: {
+            'white': '#fffbeb',
+            'hovwhite': '#fef3c7',
+            'txtbg': '#140d0a',
+            },
+        extend: {
+            backgroundImage: {
+                "bush": "url('../images/IMG_0362.JPG')",
+                "snack": "url('../images/IMG_0378.JPG')"
+            }
+        },
     },
     plugins: []
 }
