@@ -1,6 +1,6 @@
 ---
 layout: portfolio_layout
-title: "Portfolio Page"
+title: "Grey Sato"
 ---
 
 ## This is the portfolio page

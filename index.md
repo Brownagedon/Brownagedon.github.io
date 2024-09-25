@@ -1,6 +1,6 @@
 ---
 layout: home_layout
-title: "Happy Jekylling!"
+title: "Grey Sato"
 ---
 
 ## You're ready to go!
