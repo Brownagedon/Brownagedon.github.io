@@ -16,7 +16,10 @@ module.exports = {
         extend: {
             backgroundImage: {
                 "bush": "url('../images/IMG_0362.JPG')",
-                "snack": "url('../images/IMG_0378.JPG')"
+                "snack": "url('../images/IMG_0378.JPG')",
+                "sax": "url('../images/sax.JPG')",
+                "hat": "url('../images/hardhat.JPG')",
+                "sheet": "url('../images/sheet.JPG')"
             }
         },
     },
