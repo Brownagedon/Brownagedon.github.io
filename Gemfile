@@ -4,3 +4,4 @@ gem 'jekyll'
 gem 'webrick'
 
 gem 'jekyll-postcss'
+gem 'jekyll-seo-tag'
