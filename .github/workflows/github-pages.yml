@@ -10,17 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-<<<<<<< HEAD
-      - name: Install build dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y build-essential
-=======
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.1
+          ruby-version: 3.4.7
           bundler-cache: true
->>>>>>> parent of ed12db2 (ruby version update)
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
