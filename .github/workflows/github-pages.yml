@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - new-main
-      - mainfi
 
 jobs:
   github-pages:
@@ -21,8 +20,9 @@ jobs:
           node-version: '18'
       - run: npm install
       - name: Build site
-        run: |
-          bundle exec jekyll build --trace
+        uses: limjh16/jekyll-action-ts@v2
+        with:
+          enable_cache: true
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
@@ -31,3 +31,4 @@ jobs:
 
 permissions:
   contents: write
+  
