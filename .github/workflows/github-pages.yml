@@ -25,7 +25,8 @@ jobs:
           bundler-cache: true
       - name: Build site
         run: |
-          bundle exec jekyll build
+          bundle install --verbose
+          bundle exec jekyll build --trace
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
