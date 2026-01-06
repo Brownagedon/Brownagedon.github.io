@@ -3,8 +3,4 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "Grey Sato" # the name of your site, e.g. ACME Corp.
 
 plugins:
-  - jekyll-postcss
   - jekyll-seo-tag
-
-postcss:
-  cache: false
