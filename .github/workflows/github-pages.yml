@@ -4,14 +4,12 @@ on:
   push:
     branches:
       - new-main
-      - main
+      - mainfi
 
 jobs:
   github-pages:
     runs-on: ubuntu-latest
     steps:
-      - name: Install OS dependencies
-        run: sudo apt-get update && sudo apt-get install -y build-essential protobuf-compiler ruby-dev
       - uses: actions/checkout@v2
       - uses: ruby/setup-ruby@v1
         with:
@@ -22,13 +20,8 @@ jobs:
         with:
           node-version: '18'
       - run: npm install
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 3.1
-          bundler-cache: true
       - name: Build site
         run: |
-          bundle install --verbose
           bundle exec jekyll build --trace
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
@@ -38,4 +31,3 @@ jobs:
 
 permissions:
   contents: write
-  
