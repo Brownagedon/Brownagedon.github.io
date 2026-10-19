@@ -1,8 +1,4 @@
 ---
 layout: home_layout
-title: "Grey Sato"
+title: "Grey Sato — Sato Audio"
 ---
-
-## You're ready to go!
-
-Start developing your Jekyll website.

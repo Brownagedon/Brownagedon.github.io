@@ -3,48 +3,101 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Sato Audio - Home</title>
+    <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-    <link rel="icon" href="./favicon.png">
+    <link rel="icon" href="{{ "/favicon.png" | relative_url }}">
   </head>
-  <body class="text-red-500">
-    <div class='bg-txtbg'>
-        <div class='bg-bush h-[95vw] bg-left bg-cover sm:h-[85vh]'>
-            <div class='h-1'></div>
-    
-            <div class='px-[9%] mt-[6%] mb-[2%]'>
-            <a class='rounded text-white text-[56px] px-2 bg-txtbg hover:text-hovwhite' href = "./">Sato Audio</a>
-            
-            <div class='text-white px-[22px] text-[25px] px-[22px] mt-[30px] mb-[20px] xhover:text-hovwhite'>
-                <a class='px-[5px] rounded pb-[2.5px] bg-txtbg hover:text-hovwhite' href="./engineering">recording</a>
-                </div>
-    
-            <div class='text-white px-[22px] text-[25px] mt-[30px] mb-[20px] '>
-                <a class='px-[5px] rounded pb-[2.5px] bg-txtbg hover:text-hovwhite' href="./sax">saxophone</a>
-                </div>
-           
-            <div class='text-white px-[22px] text-[25px] mt-[30px] mb-[20px] xhover:text-hovwhite'>
-                <a class='px-[5px] rounded pb-[2.5px] bg-txtbg hover:text-hovwhite' href="./dsp">engineering / DSP</a>
-            </div>
+  <body class="site-body">
+    <header class="site-header">
+      <a class="site-mark" href="{{ "/" | relative_url }}">Sato Audio<span>.</span></a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#work">Work</a>
+        <a href="#research">Research</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
 
-            
-            <div class='text-white px-[22px] text-[25px] mt-[30px] mb-[20px] xhover:text-hovwhite'>
-                <a class="bg-txtbg px-[5px] rounded pb-[2.5px] hover:text-hovwhite"  href="./portfolio">recent works</a>
-                </div>
-            
-            <div class='h-1'>
-                </div>
+    <main>
+      <section class="hero-section">
+        <div class="hero-copy">
+          <p class="eyebrow">Grey Sato / Sato Audio</p>
+          <h1>Electroacoustics<br><em>as an extension of the body.</em></h1>
+          <p class="hero-lede">Saxophonist, producer, engineer, arranger, and electronic musician building expressive systems where physical performance meets digital sound.</p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#work">Recent Work <span>↘</span></a>
+            <a class="text-link" href="https://www.linkedin.com/in/grey-sato-917400225/" target="_blank" rel="noreferrer">View LinkedIn <span>↗</span></a>
+          </div>
+        </div>
+        <div class="hero-art" role="img" aria-label="Saxophone and audio equipment"></div>
+      </section>
+
+      <section id="work" class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2>Live and in studio,<br>creating sound as an art.</h2>
+        </div>
+        <div class="work-grid">
+          <a class="work-card work-card-featured" href="{{ "/sax" | relative_url }}">
+            <div class="card-image card-image-sax"></div>
+            <div class="card-content">
+              <p class="card-kicker">01 / Instrument design</p>
+              <h3>Electroacoustic saxophone</h3>
+              <p>Custom control surfaces built directly into the saxophone, connecting gesture, breath, and live signal processing.</p>
+              <span class="card-link">See the instrument ↗</span>
             </div>
-        </div>    
-        
-        <div class='h-[50vh] sm:h-[15vh]'></div>
-            <div class='flex justify-center'>
-                <a class='hover:text-hovwhite p-2 flex justify-center text-white' target='#' href='https://www.instagram.com/satotoilets/'>Instagram</a>
-                <div class='p-[1px]'></div>
-                <a class='hover:text-hovwhite p-2 flex justify-center text-white' target='#' href='https://www.youtube.com/channel/UCTeOt2LoTTyWhUkbgz4l0wA'>YouTube</a>
+          </a>
+          <a class="work-card" href="{{ "/dsp" | relative_url }}">
+            <div class="card-image card-image-dsp"></div>
+            <div class="card-content">
+              <p class="card-kicker">02 / Research</p>
+              <h3>DSP for acoustic instruments</h3>
+              <p>Exploring intuitive interfaces and embedded processing that feel natural to musicians.</p>
+              <span class="card-link">Read the research ↗</span>
             </div>
-            <a class='text-white pb-[35px] hover:text-hovwhite flex justify-center'href='mailto:grey@sato.audio'>grey@sato.audio</a>
-    
-    </div>
+          </a>
+          <a class="work-card" href="{{ "/engineering" | relative_url }}">
+            <div class="card-image card-image-studio"></div>
+            <div class="card-content">
+              <p class="card-kicker">03 / Production</p>
+              <h3>Recording &amp; production</h3>
+              <p>Recording, mixing, and mastering for artists, ensembles, and experimental projects.</p>
+              <span class="card-link">Explore studio work ↗</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="research" class="statement-section">
+        <div class="statement-label"><span>✳</span> Current research</div>
+        <blockquote>“How can digital sound become part of an acoustic instrument’s natural vocabulary?”</blockquote>
+        <p>Developing instrument-integrated electronics, analog harmonization, experimental signal processing, and TinyML systems for more musical interaction.</p>
+        <a class="text-link" href="{{ "/dsp" | relative_url }}">Progress and Notes <span>↗</span></a>
+      </section>
+
+      <section id="about" class="about-section">
+        <div>
+          <p class="eyebrow">About Grey</p>
+          <h2>Sound art across<br>the digital and physical.</h2>
+        </div>
+        <div class="about-copy">
+          <p>Saxophone, production, engineering, arranging, and electronics. Current practice pairs an acoustic performer’s perspective with custom-built control surfaces and live digital processing.</p>
+          <p>Studied at Las Positas College and continuing work at the University of Michigan.</p>
+          <div class="about-links">
+            <a class="button button-dark" href="https://www.instagram.com/satoaudio/" target="_blank" rel="noreferrer">Demos <span>↗</span></a>
+            <a class="text-link" href="mailto:grey@sato.audio">Get in touch <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Sato Audio / Grey Sato</span>
+      <div>
+        <a href="https://www.linkedin.com/in/grey-sato-917400225/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://www.instagram.com/satoaudio/" target="_blank" rel="noreferrer">Instagram</a>
+        <a href="https://www.youtube.com/channel/UCTeOt2LoTTyWhUkbgz4l0wA" target="_blank" rel="noreferrer">YouTube</a>
+        <a href="mailto:grey@sato.audio">Email</a>
+      </div>
+    </footer>
   </body>
 </html>
