@@ -5,23 +5,25 @@ title: "Electroacoustic Saxophone"
 
 ## A saxophone as an interface
 
-Grey is building custom control surfaces directly into the saxophone to make digital processing feel physical, immediate, and musical. The instrument combines a piezo barrel, custom electronics, and software effects built in Max and routed through Ableton.
+Building custom control surfaces directly into the saxophone to make digital processing feel physical, immediate, and musical. The instrument combines a piezo barrel, custom electronics, and software effects built primarily in Max.
 
-### Current setup
+### Current expolartions
 
 - Custom instrument-integrated control surfaces
-- Piezo barrel
-- Effects built in Max
-- Ableton routing
-- Custom-modded FCB1010
+- Further delevopment of processing
+- Composing for electroacoustics within the affordances and constraints of jazz
 
-### Watch the instrument in motion
+### Demos of the instrument(s)
 
 Recent demonstrations and experiments:
 
-- [Instagram reel 01](https://www.instagram.com/satoaudio/reel/DV8-kbdAS4L/)
-- [Instagram reel 02](https://www.instagram.com/satoaudio/reel/DKtfOWzBlNU/)
-- [Instagram reel 03](https://www.instagram.com/satoaudio/reel/DFN9lvMvx3-/)
+<div class="instagram-embeds">
+  <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/satoaudio/reel/DV8-kbdAS4L/" data-instgrm-version="14"></blockquote>
+  <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/satoaudio/reel/DKtfOWzBlNU/" data-instgrm-version="14"></blockquote>
+  <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/satoaudio/reel/DFN9lvMvx3-/" data-instgrm-version="14"></blockquote>
+</div>
+
+<script async src="https://www.instagram.com/embed.js"></script>
 
 More work is collected on [Instagram](https://www.instagram.com/satoaudio/).
 
